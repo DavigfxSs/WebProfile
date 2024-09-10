@@ -1,0 +1,562 @@
+@charset "UTF-8"
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fugaz+One&family=Rammetto+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fugaz+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rammetto+One&display=swap');
+
+
+.merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: justify;
+
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: bolder;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.6em;
+  
+  
+}
+
+.merriweather-black {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.merriweather-light-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.merriweather-regular-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.merriweather-bold-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.merriweather-black-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+.rammetto-one-regular {
+  font-family: "Rammetto One", sans-serif;
+  font-weight: bold;
+  font-size: 2.1em;
+  font-style: normal;
+  text-align: justify;
+}
+
+/* Fonts */
+
+body {
+    
+    margin: 0;
+    background-color: #121212;
+    color: rgb(255, 255, 255);
+    background-image: url(img/abstract-dark-blue-wallpaper-image.jpg)
+    
+}
+
+header {
+    background-color: #4666A6;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+    color: white;
+}
+
+/* Estilização da seção */
+#needs {;
+  margin-left: 0; 
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  justify-content: flex-end; /* Alinha o texto à direita */
+  padding: 0 20px; /* Ajuste o padding se necessário */
+  box-sizing: border-box;
+}
+
+.img-container {
+  width: 100vh;
+}
+
+.img-container img {
+  width: 100vh;
+}
+
+
+.text-container {
+  position: absolute; /* Posiciona o texto relativamente à section */
+  right: 7%; /* Ajuste o valor para mover o texto mais para a esquerda */
+  max-width: 50%; /* Ajusta o tamanho do texto conforme necessário */
+  padding: 20px; /* Ajuste o padding conforme necessário */
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  header {
+    width: 74.5vh;
+  }
+
+  #needs {
+    display: flex;
+    justify-content: flex-start;
+    height: auto; /* Ajusta a altura para auto em telas menores */
+    padding: 0 10px; /* Ajusta o padding para telas menores */
+    flex-direction: column;
+    justify-content: center;
+    width: 70vh;
+  }
+
+.img-container {
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  width: 70vh;
+}
+
+  .img-container img {
+    width: 75vh;
+    margin-left: 18px;
+    
+
+  }
+
+
+
+  .text-container {
+    text-align: center; /* Alinha o texto ao centro */
+    position: static; /* Remove o posicionamento absoluto */
+    white-space: 0; /* Evita quebras de linha */
+    overflow-wrap: normal; /* Não quebra palavras automaticamente */
+    word-break: normal; /* Mantém palavras inteiras */
+    line-height: 1.5; /* Ajuste do espaçamento entre linhas */
+  }
+
+  .mainmessage{
+    width: 60vh;
+    
+
+  }
+
+  #headline1 {
+    font-size: 1.8em;
+    text-align: left;
+    text-justify: distribute-all-lines;
+    word-spacing: normal; /* Define o espaçamento normal */
+    word-spacing: 2px; /* Ajuste conforme necessário */
+    margin-right: 25%;
+  }
+
+  #headline2 {
+    font-size: 1.8em;
+    text-align: left;
+    text-justify: distribute-all-lines;
+    word-spacing: normal; /* Define o espaçamento normal */
+    word-spacing: 2px; /* Ajuste conforme necessário */
+    margin-right: 25%;
+  }
+
+  .text-container br {
+    display: none;
+  }
+
+  #sobre img {
+    width: 75vh;
+    height: 75vh;
+  }
+
+}
+
+
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+button {
+    margin: 20px;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  .btn-3 {
+    background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover{
+     color: rgba(2,126,251,1);
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+
+  /* Projects*/
+
+#projetos {
+    padding: 40px 20px;
+    background-color: #f8f9fa; /* Cor de fundo suave */
+    margin-top: 50px;
+}
+
+#projetos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.projeto-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.projeto-imagem {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.projeto-info {
+    padding: 15px;
+}
+
+.projeto-info h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.projeto-info p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.btn-projeto {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-projeto:hover {
+    background-color: #0056b3;
+}
+
+/*Projects and*/
+
+}
+
+.projeto-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 300px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: #777;
+    text-align: center;
+    padding: 10px;
+}
+
+.imageprofile {
+    text-align: center;
+    align-items: center;
+    display: block; /* Remove o espaçamento indesejado em torno da imagem */
+    margin: 0px auto; /* Centraliza a imagem horizontalmente */
+}
+
+p {
+  font-weight: 400;
+  font-size: 2em;
+  text-align: justify;
+}
+
+.destaques  { 
+  font-family: "Rammetto One", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-align: justify;
+  background-color: white;
+  color: #3A5D8C;
+  padding: 2px;
+}
+
+.sucess {
+  background-color: white;
+  color: #38568c;
+}
+
+h3 {
+  text-align: center;
+}
+
+#headline1 {
+ 
+}
+
+h4 {
+    text-align: center;
+}
+
+h5 {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.language {
+    display: inline-flex;
+    width: 128px;
+    height: 128px;
+    align-content: center;
+}
+
+.lg {
+    
+    width: 80%; /* Ajuste a largura conforme necessário */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: flex;
+    justify-content: center; /* Opcional: Alinha as imagens horizontalmente no centro */
+    flex-wrap: wrap; /* Para que as imagens possam quebrar a linha se necessário */
+    
+}
+
+
+
+.image-container-2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.banner{
+  width: 100%;
+}
+
+#contato {
+  background-color: #f9f9f9; /* Cor de fundo clara */
+  padding: 40px; /* Espaçamento interno */
+  max-width: 600px; /* Largura máxima */
+  margin: 0 auto; /* Centralizar na página */
+  border-radius: 10px; /* Borda arredondada */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 20px;
+}
+
+#contato h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333; /* Cor do texto */
+  text-align: center; /* Centralizar título */
+}
+
+#contato form {
+  display: flex;
+  flex-direction: column; /* Empilhar os itens */
+  gap: 15px; /* Espaçamento entre os elementos */
+}
+
+#contato label {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #666; /* Cor do texto dos labels */
+}
+
+#contato input, 
+#contato textarea {
+  padding: 12px; /* Espaçamento interno */
+  border: 1px solid #ddd; /* Borda leve */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box; /* Inclui padding e borda no tamanho */
+  transition: border-color 0.3s; /* Transição suave ao focar */
+}
+
+#contato input:focus,
+#contato textarea:focus {
+  border-color: #007bff; /* Cor ao focar */
+  outline: none; /* Remove a linha de contorno */
+}
+
+#contato button {
+  background-color: #007bff; /* Cor do botão */
+  color: white; /* Cor do texto */
+  padding: 12px;
+  border: none; /* Sem bordas */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+#contato button:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+.redes-sociais {
+  margin-top: 20px; /* Espaçamento superior */
+  display: flex;
+  justify-content: center; /* Centralizar */
+  gap: 20px; /* Espaçamento entre os links */
+}
+
+.redes-sociais a {
+  color: #007bff; /* Cor dos links */
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  text-decoration: none; /* Remove sublinhado */
+  transition: color 0.3s; /* Transição de cor */
+}
+
+.redes-sociais a:hover {
+  color: #0056b3; /* Cor ao passar o mouse */
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/favicon.ico" sizes="256x256">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="archivo-black-regular" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;">Vicente Davi D Amorim</h1>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="photo">
+    <img src="" alt="pt-br" id="banner" width="100%">
+    </div>
+    
+    
+    <section id="needs">
+        <div class="img-container"><img src="img/Macbook Mockup.png" alt=""></div>
+        <div class="text-container">
+            <div class="mainmessage">
+                <h2 id="headline1" class="rammetto-one-regular">We turn your ideas into <br> a <span class="destaques">thriving business!</span></h2>
+                <h2 id="headline2" class="rammetto-one-regular">Let’s bring your vision <br> to life  with innovative web solutions <br> tailored to your needs. From concept <br> to launch, we're here to make your <br> digital dreams a reality.</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h3 id="about-me-header" class="merriweather-bold">Get to Know Me</h3>
+        <h3 class="merriweather-bold">Front-End Developer</h3>
+        <img src="img/workprofile.jpg" alt="" class="imageprofile">
+        <h3 id="about-me-header2" class="merriweather-bold">About me</h3>
+        <p id="about-me-text">Hello, my name is Vicente. I'm a student and a freelance front-end developer with a passion for creating intuitive and functional user interfaces. I balance my time between studying and freelance projects, where I apply my knowledge of HTML, CSS, JavaScript, and frameworks like React to develop web solutions that excel in both design and performance.</p>
+        <div class="frame">
+            <a href="resumepage.html"><button class="custom-btn btn-3" onclick=""><span>Download Resume</span></button></a>
+            <button class="custom-btn btn-3" onclick="contatoWhatsApp()"><span>Chat Whatsapp</span></button>
+        </div>
+    </section>
+
+    <h4 id="lgw" class="merriweather-bold">Programming Languages I Work With:</h4>
+    <div class="lg">
+        <img src="img/html5.png" alt="" class="language">
+        <img src="img/css-3.png" alt="" class="language">
+        <img src="img/icons8-javascript-480.png" alt="" class="language" >
+        <img src="img/icons8-react-480.png" alt="" class="language" >
+        <img src="img/icons8-texto-datilografado-480.png" alt="" class="language" >
+    </div>
+
+    <section id="projetos">
+        <h2 class="merriweather-regular">Projects</h2>
+        <div class="projetos-container">
+            <div class="projeto-card">
+                <img src="img/Android Logo.png" alt="Imagem do Projeto 1" class="projeto-imagem">
+                <div class="projeto-info">
+                    <h3>Android Project</h3>
+                    <p><br>A basic Android project just to show the ability to make responsive websites with Video and Images.</p>
+                    <a href="https://davigfxss.github.io/firstsite-test/" target="_blank" class="btn-projeto">View Project</a>
+                </div>
+            </div>
+        <div class="projeto-card">
+            <img src="img/cactus.webp" alt="Imagem do Projeto 2" class="projeto-imagem">
+            <div class="projeto-info">
+                <h3>Cordel Project</h3>
+                <p>project thinking about creating a website paying homage to a famous poem using the parallax effect to make reading exciting.</p>
+                <a href="https://davigfxss.github.io/cordel-project/" target="_blank" class="btn-projeto">View Project</a>
+            </div>
+            
+        </div>
+        <div class="projeto-card">
+            <img src="img/age checker.png" alt="Imagem do Projeto 2" class="projeto-imagem">
+            <div class="projeto-info">
+                <h3>Cordel Project</h3>
+                <p><br> A project to test Javascript knowledge, making an age meter that finds the photo compatible with the user's age.</p>
+                <a href="https://davigfxss.github.io/Age-Checker/" target="_blank" class="btn-projeto">View Project</a>
+            </div>
+    </div>
+        
+    </section>
+
+    <section id="servicos">
+        <h2 class="merriweather-bold">Serviços</h2>
+        <ul class="merriweather-light">
+            <li>Desenvolvimento de Sites</li>
+            <li>Aplicativos Web</li>
+            <li>Consultoria em Front-End</li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2 id="mailcontact">Let's start your project!</h2>
+        <form method="post" id="contact-form">
+            <label for="nome">Name:</label>
+            <input type="text" id="nome" name="nome"  required>
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="pnumber">Number Phone:</label>
+            <input type="tel" id="pnumber" name="pnumber" required placeholder="+1 408 123 4567" required>
+            <br>
+            <label for="mensagem">Message:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/vicente-davi-diniz-amorim-001635176/" target="_blank" type="external">LinkedIn</a>
+            <a href="https://github.com/DavigfxSs"  target="_blank" type="external">GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vicente Davi Diniz. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "-zyp1tlv8mqxWD8Lj",
+      });
+   })();
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
