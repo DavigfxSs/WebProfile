@@ -1,3 +1,22 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const userLanguage = navigator.language || navigator.userLanguage;
+
+    function translatePage(language) {
+        if (language.startsWith('pt')) {
+            // Traduções para português
+            document.getElementById('apresent').innerHTML = 'Olá, estou feliz que você esteja interessado em baixar <br> meu currículo. Espero que possamos colaborar em breve, e <br> estou ansioso para ajudar a transformar sua ideia em realidade.';
+            document.getElementById('downloadtxt').innerHTML = 'Escolha como baixar <br><br>↓'
+           
+        } else {
+            // Traduções para inglês ou outros idiomas
+            document.getElementById('apresent').innerHTML = 'Hello, Im glad you’re interested in downloading <br> my resume.  I hope we can collaborate soon, and <br>I’m looking forward to helping turn your idea into reality.';
+            document.getElementById('downloadtxt').innerHTML = 'you can download in these languages <br><br>↓'
+        }
+    }
+
+    translatePage(userLanguage);
+});
+
 document.querySelectorAll('.button').forEach(button => {
 
     let duration = 3000,
@@ -101,3 +120,4 @@ function baixarCurriculoEN() {
     link.click();
     document.body.removeChild(link);
 }
+
