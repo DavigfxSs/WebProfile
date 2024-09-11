@@ -287,7 +287,7 @@ html, body {
   }
 
   .mainmessage{
-    width: 50vh;
+    width: 42vh;
     margin-left: 10vh;
 
   }
@@ -319,15 +319,24 @@ html, body {
   }
   
   #sobre img {
-    width: 45vh;
-    height: 45vh;
+    width: 40vh;
+    height: 40vh;
+  }
+
+  .about-me-divtext {
+    
+    margin-top: 5vh;
+    font-size: 0.8em;
   }
 
   #about-me-text{
-    width: 45vh;
+    margin-top: 2vh;
+    width: 47vh;
     text-align: center;
     margin-left: 6.5vh;
+    
   }
+
 
 }
 

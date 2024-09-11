@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('headline1').innerHTML = 'Transformamos <br> suas ideias em um negócio de <span class="sucess">sucesso!</span>';
             document.getElementById('headline2').innerHTML = 'Vamos tornar sua visão uma realidade <br> com soluções web inovadoras adaptadas <br> às suas necessidades.';
             document.getElementById('about-me-header').textContent = 'Vamos nos conhecer';
-            document.getElementById('about-me-header2').textContent = 'Sobre mim'; 
+            document.getElementById('about-me-header2').textContent = 'Sobre mim:'; 
             document.getElementById('mailcontact').textContent = 'Vamos começar seu projeto! 📈';
             document.getElementById('about-me-text').textContent = 'Olá, meu nome é Vicente. Sou estudante e desenvolvedor front-end freelancer com uma paixão por criar interfaces de usuário intuitivas e funcionais...';
             document.getElementById('lgw').innerHTML = 'Linguagens de programação <br> que trabalho!'
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('headline2').innerHTML = 'Let’s bring your vision to life with innovative web solutions tailored to your needs.';
             document.getElementById('about-me-header').textContent = 'Get to Know Me';
             document.getElementById('mailcontact').textContent = 'Let’s start your project! 📈'
-            document.getElementById('about-me-header2').textContent = 'About me'; 
+            document.getElementById('about-me-header2').textContent = 'About me:'; 
             document.getElementById('about-me-text').textContent = 'Hello, my name is Vicente. I\'m a student and a freelance front-end developer with a passion for creating intuitive and functional user interfaces...';
             document.getElementById('lgw').innerHTML = 'Programming Languages I Work With:'
         }
