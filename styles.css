@@ -223,82 +223,67 @@ section {
 
 @media (max-width: 750px) {
 
-}
 
-
+  /* Estilos do header e navbar */
   header {
-    width: 60vh;
-    
+    width: 100%;
   }
 
   nav h1 {
-    width: 60vh;
+    width: 100%;
   }
 
   #navbar {
-    width: 60vh;
+    width: 100%;
     font-size: 2.2vh;
   }
 
   .photo {
-  width: 60vh;
+    width: 100%;
   }
 
+  /* Seção needs */
   #needs {
     display: flex;
+    flex-direction: column; /* Coloca uma div abaixo da outra */
     justify-content: flex-start;
-    height: auto; /* Ajusta a altura para auto em telas menores */
-    padding: 0 10px; /* Ajusta o padding para telas menores */
-    flex-direction: column;
-    justify-content: center;
-    max-width: 6vh;
+    align-items: center; /* Centraliza o conteúdo na horizontal */
+    height: auto; /* Permite que a altura ajuste automaticamente */
+    padding: 0 10px; /* Mantém um padding lateral */
+    max-width: 100%; /* Define a largura máxima como 100% do pai */
   }
 
-.img-container {
-  align-items: center;
-  justify-content: center;
-  justify-self: center;
-  width: 10vh;
-}
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Largura completa para ocupar o máximo possível */
+    max-width: 100%; /* Garante que não exceda o tamanho da tela */
+  }
 
   .img-container img {
-    width: 60vh;
-    
-
+    width: 100%; /* Faz com que a imagem ocupe todo o espaço da div */
+    height: auto; /* Mantém a proporção da imagem */
   }
-
-
 
   .text-container {
-    text-align: center; /* Alinha o texto ao centro */
-    position: static; /* Remove o posicionamento absoluto */
-    overflow-wrap: normal; /* Não quebra palavras automaticamente */
-    word-break: normal; /* Mantém palavras inteiras */
-    line-height: 1.5; /* Ajuste do espaçamento entre linhas */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Adiciona padding para espaçamento interno */
+    width: 100%; /* Largura completa para ocupar o máximo possível */
   }
 
-  .mainmessage{
-    width: 42vh;
-    margin-left: 10vh;
-
+  .mainmessage {
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 100%; /* Garante que o texto não ultrapasse os limites */
   }
 
-  #headline1 {
-    font-size: 1.6em;
-    text-align: left;
+  #headline1, #headline2 {
+    font-size: 1.4em; /* Ajusta o tamanho da fonte para telas menores */
+    text-align: center; /* Centraliza o texto */
     word-spacing: normal; /* Define o espaçamento normal */
-    word-spacing: 2px; /* Ajuste conforme necessário */
-  
-    
+    margin: 10px 0; /* Espaçamento entre os títulos */
   }
-
-  #headline2 {
-    font-size: 1.6em;
-    text-align: left;
-    word-spacing: normal; /* Define o espaçamento normal */
-    word-spacing: 2px; /* Ajuste conforme necessário */
-    margin-top: 8vh;
-  }
+}
 
   .text-container br {
     display: none;
@@ -328,6 +313,93 @@ section {
     
   }
 
+  #sobre {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os elementos */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Adiciona padding para espaçamento */
+    max-width: 100%; /* Garante que a seção ocupe toda a largura */
+  }
+
+  #sobre img {
+    width: 100%; /* Ajusta a largura da imagem para ocupar o espaço disponível */
+    max-width: 200px; /* Define um tamanho máximo para não exagerar */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 20px 0; /* Adiciona espaçamento acima e abaixo da imagem */
+  }
+
+  .about-me-divtext {
+    margin-top: 20px; /* Espaçamento superior */
+    font-size: 1em; /* Tamanho de fonte ajustado para leitura em telas menores */
+    padding: 0 20px; /* Padding lateral para espaçamento */
+    max-width: 100%; /* Garante que o texto não ultrapasse as bordas */
+  }
+
+  #about-me-header2 {
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+  }
+
+  #about-me-text {
+    margin-top: 10px; /* Espaçamento superior */
+    width: auto; /* Permite que o texto ocupe o espaço disponível */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 10px; /* Padding lateral para espaçamento */
+  }
+
+  .frame {
+    display: flex;
+    flex-direction: column; /* Coloca os botões em coluna */
+    gap: 10px; /* Espaço entre os botões */
+    width: 100%; /* Largura total para centralização */
+    align-items: center; /* Centraliza os botões */
+    margin-top: 20px; /* Espaçamento superior */
+  }
+
+  .custom-btn {
+    width: 80%; /* Ajusta a largura dos botões */
+    max-width: 200px; /* Define um tamanho máximo para os botões */
+  }
+}
+
+/* Ajustes gerais para desktops */
+#sobre {
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#sobre img {
+  width: 40vh; /* Mantém a largura original para desktops */
+  height: auto; /* Mantém a proporção da imagem */
+  max-width: 100%; /* Garante que não ultrapasse os limites do contêiner */
+}
+
+.about-me-divtext {
+  margin-top: 5vh;
+  font-size: 0.8em;
+}
+
+#about-me-text {
+  margin-top: 2vh;
+  width: 47vh;
+  text-align: center;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 0 10px; /* Padding lateral */
+}
+
+.frame {
+  display: flex;
+  gap: 20px; /* Espaço entre os botões */
+  justify-content: center; /* Centraliza os botões */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+.custom-btn {
+  padding: 10px 20px; /* Padding interno dos botões */
+  transition: 0.3s; /* Adiciona transição para um efeito suave */
+}
 
 }
 
