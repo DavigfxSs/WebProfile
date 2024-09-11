@@ -1,4 +1,4 @@
-@charset "UTF-8"
+
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fugaz+One&family=Rammetto+One&display=swap');
@@ -172,7 +172,6 @@ section {
     .text-container {
       text-align: center; /* Alinha o texto ao centro */
       position: static; /* Remove o posicionamento absoluto */
-      white-space: 0; /* Evita quebras de linha */
       overflow-wrap: normal; /* Não quebra palavras automaticamente */
       word-break: normal; /* Mantém palavras inteiras */
       line-height: 1.5; /* Ajuste do espaçamento entre linhas */
@@ -220,7 +219,7 @@ section {
 
 
 
-@media (max-width: 940px) {
+@media (max-width: 750px) {
 
 
   header {
@@ -238,7 +237,7 @@ section {
   }
 
   .photo {
-  width: 65vh;
+  width: 65.5vh;
   }
 
   #needs {
@@ -271,7 +270,6 @@ section {
     margin-left: 12vh;
     text-align: center; /* Alinha o texto ao centro */
     position: static; /* Remove o posicionamento absoluto */
-    white-space: 0; /* Evita quebras de linha */
     overflow-wrap: normal; /* Não quebra palavras automaticamente */
     word-break: normal; /* Mantém palavras inteiras */
     line-height: 1.5; /* Ajuste do espaçamento entre linhas */
