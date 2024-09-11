@@ -247,19 +247,18 @@ section {
     padding: 0 10px; /* Ajusta o padding para telas menores */
     flex-direction: column;
     justify-content: center;
-    width: 18vh;
+    width: 12vh;
   }
 
 .img-container {
   align-items: center;
   justify-content: center;
   justify-self: center;
-  width: 55vh;
+  width: 10vh;
 }
 
   .img-container img {
     width: 60vh;
-    margin-left: 150px;
     
 
   }
@@ -267,7 +266,6 @@ section {
 
 
   .text-container {
-    margin-left: 12vh;
     text-align: center; /* Alinha o texto ao centro */
     position: static; /* Remove o posicionamento absoluto */
     overflow-wrap: normal; /* Não quebra palavras automaticamente */
@@ -277,14 +275,13 @@ section {
 
   .mainmessage{
     width: 50vh;
-    
+    margin-left: 10vh;
 
   }
 
   #headline1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     text-align: left;
-    text-justify: distribute-all-lines;
     word-spacing: normal; /* Define o espaçamento normal */
     word-spacing: 2px; /* Ajuste conforme necessário */
     
@@ -292,9 +289,8 @@ section {
   }
 
   #headline2 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     text-align: left;
-    text-justify: distribute-all-lines;
     word-spacing: normal; /* Define o espaçamento normal */
     word-spacing: 2px; /* Ajuste conforme necessário */
     
