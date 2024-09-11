@@ -226,7 +226,7 @@ section {
 
   /* Estilos do header e navbar */
   header {
-    width: 100%;
+    width: 92%;
   }
 
   nav h1 {
@@ -401,7 +401,88 @@ section {
   transition: 0.3s; /* Adiciona transição para um efeito suave */
 }
 
+/* End About me*/
+
+@media (max-width: 750px) {
+    #projetos {
+        padding: 20px; /* Reduz o padding para melhor ajuste em telas menores */
+        margin-top: 20px; /* Ajusta o margin-top para não ocupar muito espaço */
+    }
+
+    #projetos h2 {
+        font-size: 1.8rem; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .projetos-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta o número de colunas */
+        gap: 10px; /* Reduz o espaço entre os cartões */
+    }
+
+    .projeto-card {
+        border-radius: 8px; /* Mantém bordas arredondadas adequadas */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajusta a sombra para uma aparência mais suave */
+    }
+
+    .projeto-imagem {
+        height: 120px; /* Ajusta a altura da imagem para melhor visualização em telas pequenas */
+    }
+
+    .projeto-info h3 {
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte do título */
+    }
+
+    .projeto-info p {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte do parágrafo */
+    }
+
+    .btn-projeto {
+        padding: 8px 12px; /* Ajusta o padding dos botões */
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte dos botões */
+    }
 }
+
+@media (max-width: 750px) {
+  #projetos {
+      padding: 20px; /* Reduz o padding para melhor ajuste em telas menores */
+      margin-top: 20px; /* Ajusta o margin-top para não ocupar muito espaço */
+  }
+
+  #projetos h2 {
+      font-size: 1.8rem; /* Ajusta o tamanho da fonte para telas menores */
+  }
+
+  .projetos-container {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta o número de colunas */
+      gap: 10px; /* Reduz o espaço entre os cartões */
+  }
+
+  .projeto-card {
+      border-radius: 8px; /* Mantém bordas arredondadas adequadas */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajusta a sombra para uma aparência mais suave */
+  }
+
+  .projeto-imagem {
+      height: 120px; /* Ajusta a altura da imagem para melhor visualização em telas pequenas */
+  }
+
+  .projeto-info h3 {
+      font-size: 1.2rem; /* Ajusta o tamanho da fonte do título */
+  }
+
+  .projeto-info p {
+      font-size: 0.9rem; /* Ajusta o tamanho da fonte do parágrafo */
+  }
+
+  .btn-projeto {
+      padding: 8px 12px; /* Ajusta o padding dos botões */
+      font-size: 0.9rem; /* Ajusta o tamanho da fonte dos botões */
+  }
+}
+
+}
+
+
+
 
 
 .frame {
