@@ -140,12 +140,105 @@ section {
 
 }
 
+@media screen and (max-width: 1850px) {
+  
+  #needs {
+    display: flex;
+    justify-content: flex-start;
+    height: auto; /* Ajusta a altura para auto em telas menores */
+    padding: 0 10px; /* Ajusta o padding para telas menores */
+    flex-direction: column;
+    justify-content: center;
+    width: 100vh;
+    
+  }
+
+  .img-container {
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    width: 70vh;
+  }
+  
+    .img-container img {
+      width: 75vh;
+      margin-left: 18px;
+      
+  
+    }
+  
+  
+  
+    .text-container {
+      text-align: center; /* Alinha o texto ao centro */
+      position: static; /* Remove o posicionamento absoluto */
+      white-space: 0; /* Evita quebras de linha */
+      overflow-wrap: normal; /* Não quebra palavras automaticamente */
+      word-break: normal; /* Mantém palavras inteiras */
+      line-height: 1.5; /* Ajuste do espaçamento entre linhas */
+    }
+  
+    .mainmessage{
+      width: 90vh;
+      
+  
+    }
+  
+    #headline1 {
+      font-size: 1.8em;
+      text-align: left;
+      text-justify: distribute-all-lines;
+      word-spacing: normal; /* Define o espaçamento normal */
+      word-spacing: 2px; /* Ajuste conforme necessário */
+      margin-right: 25%;
+    }
+  
+    #headline2 {
+      font-size: 1.8em;
+      text-align: left;
+      text-justify: distribute-all-lines;
+      word-spacing: normal; /* Define o espaçamento normal */
+      word-spacing: 2px; /* Ajuste conforme necessário */
+      margin-right: 25%;
+    }
+  
+    .text-container br {
+      display: none;
+    }
+  
+    #sobre img {
+      width: 50vh
+
+    }
+
+    #about-me-text{
+      width: 100vh;
+      text-align: center;
+    }
+    
+  }
 
 
-@media (max-width: 768px) {
+
+@media (max-width: 940px) {
+
 
   header {
-    width: 74.5vh;
+    width: 60vh;
+    
+  }
+
+  nav h1 {
+    width: 60vh;
+  }
+
+  #navbar {
+    width: 60vh;
+    font-size: 2.2vh;
+  }
+
+  .photo {
+  width: 62.5vh;
   }
 
   #needs {
@@ -155,19 +248,19 @@ section {
     padding: 0 10px; /* Ajusta o padding para telas menores */
     flex-direction: column;
     justify-content: center;
-    width: 70vh;
+    width: 18vh;
   }
 
 .img-container {
   align-items: center;
   justify-content: center;
   justify-self: center;
-  width: 70vh;
+  width: 55vh;
 }
 
   .img-container img {
-    width: 75vh;
-    margin-left: 18px;
+    width: 60vh;
+    margin-left: 150px;
     
 
   }
@@ -175,6 +268,7 @@ section {
 
 
   .text-container {
+    margin-left: 12vh;
     text-align: center; /* Alinha o texto ao centro */
     position: static; /* Remove o posicionamento absoluto */
     white-space: 0; /* Evita quebras de linha */
@@ -184,7 +278,7 @@ section {
   }
 
   .mainmessage{
-    width: 60vh;
+    width: 50vh;
     
 
   }
@@ -195,7 +289,8 @@ section {
     text-justify: distribute-all-lines;
     word-spacing: normal; /* Define o espaçamento normal */
     word-spacing: 2px; /* Ajuste conforme necessário */
-    margin-right: 25%;
+    
+    
   }
 
   #headline2 {
@@ -204,7 +299,7 @@ section {
     text-justify: distribute-all-lines;
     word-spacing: normal; /* Define o espaçamento normal */
     word-spacing: 2px; /* Ajuste conforme necessário */
-    margin-right: 25%;
+    
   }
 
   .text-container br {
@@ -212,8 +307,14 @@ section {
   }
 
   #sobre img {
-    width: 75vh;
-    height: 75vh;
+    width: 45vh;
+    height: 45vh;
+  }
+
+  #about-me-text{
+    width: 45vh;
+    text-align: center;
+    margin-left: 6.5vh;
   }
 
 }
