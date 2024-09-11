@@ -71,7 +71,9 @@
 
 /* Fonts */
 
+
 body {
+  
     
     margin: 0;
     background-color: #121212;
@@ -221,6 +223,17 @@ section {
 
 @media (max-width: 750px) {
 
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Impede rolagem lateral */
+}
+
 
   header {
     width: 60vh;
@@ -237,7 +250,7 @@ section {
   }
 
   .photo {
-  width: 65.5vh;
+  width: 60vh;
   }
 
   #needs {
@@ -247,7 +260,7 @@ section {
     padding: 0 10px; /* Ajusta o padding para telas menores */
     flex-direction: column;
     justify-content: center;
-    width: 12vh;
+    max-width: 6vh;
   }
 
 .img-container {
@@ -284,7 +297,7 @@ section {
     text-align: left;
     word-spacing: normal; /* Define o espaçamento normal */
     word-spacing: 2px; /* Ajuste conforme necessário */
-    
+  
     
   }
 
@@ -293,7 +306,7 @@ section {
     text-align: left;
     word-spacing: normal; /* Define o espaçamento normal */
     word-spacing: 2px; /* Ajuste conforme necessário */
-    
+    margin-top: 8vh;
   }
 
   .text-container br {
