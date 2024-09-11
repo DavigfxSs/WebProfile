@@ -72,6 +72,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Aplicar o banner baseado no idioma do usuário
     setBanner(userLanguage);
+
+    
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -80,8 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function translatePage(language) {
         if (language.startsWith('pt')) {
             // Traduções para português
-            document.getElementById('headline1').innerHTML = 'Transformamos <br> suas ideias em um negócio de <span class="sucess">sucesso!</span>';
-            document.getElementById('headline2').innerHTML = 'Vamos tornar sua visão uma realidade <br> com soluções web inovadoras adaptadas <br> às suas necessidades.';
+            document.getElementById('headline1').innerHTML = 'Transformamos suas ideias em um <br> negócio de <span class="sucess">sucesso!</span>';
+            document.getElementById('headline2').innerHTML = 'Vamos tornar sua visão uma realidade com soluções web inovadoras adaptadas às suas necessidades.';
             document.getElementById('about-me-header').textContent = 'Vamos nos conhecer';
             document.getElementById('about-me-header2').textContent = 'Sobre mim:'; 
             document.getElementById('mailcontact').textContent = 'Vamos começar seu projeto! 📈';
@@ -89,8 +91,8 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('lgw').innerHTML = 'Linguagens de programação <br> que trabalho!'
         } else {
             // Traduções para inglês ou outros idiomas
-            document.getElementById('headline1').innerHTML = 'We turn your ideas into a <span class="sucess">thriving</span> business!';
-            document.getElementById('headline2').innerHTML = 'Let’s bring your vision to life with innovative web solutions tailored to your needs.';
+            document.getElementById('headline1').innerHTML = 'We turn your ideas <br> into a <span class="sucess">thriving</span> business!';
+            document.getElementById('headline2').innerHTML = 'Let’s bring your vision to life <br> with innovative web solutions tailored to your needs.';
             document.getElementById('about-me-header').textContent = 'Get to Know Me';
             document.getElementById('mailcontact').textContent = 'Let’s start your project! 📈'
             document.getElementById('about-me-header2').textContent = 'About me:'; 
@@ -100,5 +102,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     translatePage(userLanguage);
+
+    
+
 });
+
+
 
